@@ -1,0 +1,102 @@
+.sticky {
+    background-color: black;
+    padding: 15px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #fff;
+}
+
+*ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+.header-area {
+
+    overflow: hidden;
+}
+
+.conatiner {
+    width: 80%;
+    margin: auto;
+    background: red;
+}
+
+.logo-area {
+    width: 30%;
+    float: left;
+}
+
+.logo-area img {
+    width: 250px;
+    height: 75px;
+}
+
+.menu-area {
+    width: 70%;
+    float: left;
+    margin-top: 20px;
+}
+
+.menu-area ul {
+    text-align: center;
+}
+
+.menu-area ul li {
+    display: inline;
+}
+
+.menu-area ul li a {
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    font-size: 18px;
+    text-transform: uppercase;
+    position: relative;
+    float: left;
+}
+
+.menu-area ul li a:hover {
+
+    transition: .50s;
+}
+
+.menu-area ul li a::before {
+    background: #ff0000;
+    width: 50%;
+    height: 5px;
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    opacity: 0;
+}
+
+.menu-area ul li a::after {
+    background: rgb(255, 255, 255);
+    width: 50%;
+    height: 5px;
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    opacity: 0;
+}
+
+.menu-area ul li a:hover::before {
+    opacity: 1;
+    transition: 5s;
+}
+
+.menu-area ul li a:hover::after {
+    opacity: 1;
+    transition: 5s;
+}
